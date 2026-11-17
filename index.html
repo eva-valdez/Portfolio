@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Eva Valdez · UX & Product Portfolio</title>
+<title>Eva Valdez · Portfolio</title>
+<meta name="description" content="Selected work by Eva Valdez: We Remain, an iOS survival game; Polish, a booking experience redesign; and the Keep Pinellas Beautiful website."/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -201,15 +202,65 @@
       .project-divider{padding-left:22px;padding-right:22px}
       .screen-gallery.before{justify-content:flex-start}
     }
+
+/* WE REMAIN — captured from the playable iOS build */
+:root{--wr-green:#b8e67e}
+#we-remain,#polish,#contact,#wr-watch,#wr-screens{scroll-margin-top:90px}
+.wr-section{padding-top:76px}
+.wr-eyebrow{color:var(--wr-green);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+.wr-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;padding-bottom:66px}
+.wr-intro h2{font-size:clamp(56px,7vw,96px);margin-bottom:24px}
+.wr-lede{font-size:20px;line-height:1.6;max-width:570px;margin-bottom:18px}
+.wr-copy{color:#aaa6a1;max-width:570px;line-height:1.85}
+.wr-facts{display:flex;flex-wrap:wrap;gap:20px 34px;margin:30px 0}
+.wr-facts dt{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.wr-facts dd{font-size:13px}
+.wr-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.wr-actions .btn-p{background:var(--wr-green)}
+.wr-phone-stage{display:flex;justify-content:center;position:relative;background:radial-gradient(ellipse at center,rgba(151,193,96,.12),transparent 68%);padding:12px 0 28px}
+.wr-phone{width:min(285px,85%);background:#030504;border:6px solid #242526;border-radius:35px;overflow:hidden;box-shadow:0 30px 80px #0009}
+.wr-phone img{width:100%;height:auto;display:block}
+.wr-phone-note{text-align:center;color:var(--muted);font-size:11px;margin-top:16px}
+.wr-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:25px}
+.wr-heading h3{font-family:'DM Serif Display',serif;font-size:32px;font-weight:400;line-height:1.2}
+.wr-heading p{max-width:450px;color:#aaa6a1;font-size:13px;line-height:1.7}
+.wr-videos{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:72px}
+.wr-video-card{border:1px solid var(--border);background:#111213;border-radius:10px;overflow:hidden}
+.wr-video-stage{display:flex;justify-content:center;background:radial-gradient(ellipse at center,#242a20,#0b0d0b 78%);padding:26px}
+.wr-video-stage video{display:block;width:100%;max-width:265px;aspect-ratio:886/1920;background:#050605;border-radius:16px;object-fit:contain;color-scheme:dark}
+.wr-video-caption{padding:23px 26px 27px;border-top:1px solid var(--border)}
+.wr-label{font-size:10px;letter-spacing:.11em;color:var(--wr-green);text-transform:uppercase;margin-bottom:8px}
+.wr-video-caption h4{font-size:18px;font-weight:500;margin-bottom:9px}
+.wr-video-caption p{color:#aaa6a1;font-size:13px;line-height:1.8}
+.wr-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-bottom:60px}
+.wr-shot{margin:0;min-width:0}
+.wr-shot button{border:1px solid var(--border);border-radius:10px;background:#111713;padding:10px;width:100%;cursor:zoom-in;display:block;transition:border-color .2s,transform .2s}
+.wr-shot button:hover{border-color:var(--wr-green);transform:translateY(-4px)}
+.wr-shot img{width:100%;height:auto;border-radius:4px;display:block}
+.wr-shot figcaption{padding:15px 2px;font-size:12px;line-height:1.65;color:#aaa6a1}
+.wr-shot strong{display:block;color:var(--text);font-weight:500;font-size:13px;margin-bottom:4px}
+.wr-decisions{display:grid;grid-template-columns:1fr 1fr;gap:42px;border-top:1px solid var(--border);padding-top:32px}
+.wr-decisions h4{font-size:15px;font-weight:500;margin-bottom:10px}
+.wr-decisions p{font-size:13px;color:#aaa6a1;line-height:1.85}
+.wr-dialog{padding:20px;background:#111213;border:1px solid #555;border-radius:12px;color:var(--text);max-width:94vw;max-height:94dvh;margin:auto}
+.wr-dialog::backdrop{background:#000d;backdrop-filter:blur(7px)}
+.wr-dialog img{display:block;max-width:85vw;max-height:78dvh;width:auto;height:auto;margin:12px auto}
+.wr-dialog button{display:block;margin-left:auto;background:var(--accent);border:0;border-radius:4px;padding:9px 16px;cursor:pointer;color:#190c12}
+.wr-dialog p{font-size:12px;text-align:center;color:#bbb}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+@media(max-width:900px){.wr-intro{gap:30px}.wr-gallery{gap:12px}.wr-video-stage{padding:20px}.wr-phone{width:min(260px,100%)}}
+@media(max-width:650px){nav{padding:16px}.nav-links{gap:13px}.nav-links a{font-size:10px;letter-spacing:.03em}.nav-name{font-size:14px}.wr-intro{grid-template-columns:1fr;gap:38px}.wr-intro h2{font-size:62px}.wr-heading{display:block}.wr-heading p{margin-top:12px}.wr-videos{grid-template-columns:1fr}.wr-gallery{grid-template-columns:1fr 1fr;gap:18px 12px}.wr-decisions{grid-template-columns:1fr;gap:24px}.wr-video-stage video{max-width:285px}.wr-lede{font-size:18px}.wr-intro{padding-bottom:48px}}
+
 </style>
 </head>
 <body>
 <nav>
   <a class="nav-name" href="#top">Eva Valdez</a>
   <ul class="nav-links">
+    <li><a href="#we-remain">We Remain</a></li>
     <li><a href="#polish">Polish</a></li>
     <li><a href="#kpb">KPB</a></li>
-    <li><a href="#top">Contact</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -222,6 +273,7 @@
         <span class="tag hi">UX Research</span><span class="tag hi">Product Design</span><span class="tag hi">Information Architecture</span><span class="tag hi">Responsive Design</span><span class="tag">Figma</span><span class="tag">Swift / iOS</span><span class="tag">HTML / CSS / JS</span><span class="tag">Python</span><span class="tag">Git / GitHub</span>
       </div>
       <div class="project-nav">
+        <a href="#we-remain">Explore We Remain</a>
         <a href="#polish">View Polish case study</a>
         <a href="#kpb">View KPB redesign</a>
       </div>
@@ -234,6 +286,35 @@
     </div>
   </div>
 </div>
+
+
+<section class="sec wr-section" id="we-remain" aria-labelledby="wr-title">
+  <p class="wr-eyebrow">Selected work · iOS game · In development</p>
+  <div class="wr-intro">
+    <div>
+      <h2 id="wr-title">We <em>Remain.</em></h2>
+      <p class="wr-lede">The city is dead. Keep moving.</p>
+      <p class="wr-copy">A zombie survival runner built around quick decisions: switch lanes, clear obstacles, collect scrap, and stay ahead of what’s chasing you. I’m designing and building the game independently in Swift, from the first gameplay loop to the menus and systems surrounding each run.</p>
+      <dl class="wr-facts"><div><dt>Platform</dt><dd>iOS</dd></div><div><dt>Built with</dt><dd>Swift · Xcode</dd></div><div><dt>My work</dt><dd>Design &amp; development</dd></div></dl>
+      <div class="wr-actions"><a class="btn btn-p" href="#wr-watch">Watch the game ↓</a><a class="btn btn-g" href="#wr-screens">Explore the screens</a></div>
+    </div>
+    <div><div class="wr-phone-stage"><div class="wr-phone"><img src="assets/menu.webp" alt="We Remain main menu with a pixel-art survivor, survival instructions, and a green Run button" width="886" height="1770" loading="lazy"/></div></div><p class="wr-phone-note">Captured from the playable build</p></div>
+  </div>
+  <div class="wr-heading" id="wr-watch"><h3>See it in motion.</h3><p>Two recordings from the current build: a look around the game, then a run through the city. Press play to watch either clip.</p></div>
+  <div class="wr-videos">
+    <figure class="wr-video-card"><div class="wr-video-stage"><video controls playsinline preload="none" poster="assets/menu.webp" aria-label="We Remain mechanics and interface walkthrough"><source src="assets/mechanics.mp4" type="video/mp4"/>Your browser does not support embedded video. <a href="assets/mechanics.mp4">Watch the mechanics video</a>.</video></div><figcaption class="wr-video-caption"><p class="wr-label">01 / Mechanics · 0:51</p><h4>Before the run</h4><p>Explore the main menu, preview survivor outfits, and browse the zombie guide. The same pixel-art style carries through the character choices, instructions, and game world.</p></figcaption></figure>
+    <figure class="wr-video-card"><div class="wr-video-stage"><video controls playsinline preload="none" poster="assets/run.webp" aria-label="We Remain gameplay recording showing lane changes, obstacles, scrap collection, and a pursuing boss"><source src="assets/gameplay.mp4" type="video/mp4"/>Your browser does not support embedded video. <a href="assets/gameplay.mp4">Watch the gameplay video</a>.</video></div><figcaption class="wr-video-caption"><p class="wr-label">02 / Gameplay · 1:10</p><h4>Keep moving</h4><p>A full look at the runner in action: navigating barricades and hazards, collecting scrap, and reacting to enemies while a larger threat follows behind.</p></figcaption></figure>
+  </div>
+  <div class="wr-heading" id="wr-screens"><h3>A closer look.</h3><p>Actual screens from the recordings. Select an image to see it larger.</p></div>
+  <div class="wr-gallery">
+    <figure class="wr-shot"><button type="button" data-shot="assets/run.webp" data-caption="The run · Obstacles, enemies, and pickups share a three-lane street." aria-label="Enlarge gameplay screen"><img src="assets/run-thumb.webp" alt="Gameplay with a survivor avoiding flaming wreckage, toxic hazards, and zombies" loading="lazy" width="440" height="879"/></button><figcaption><strong>The run</strong>Distance, scrap, and health stay visible above the action.</figcaption></figure>
+    <figure class="wr-shot"><button type="button" data-shot="assets/customize.webp" data-caption="Survivor customization · Preview outfits and see their scrap cost before buying." aria-label="Enlarge customization screen"><img src="assets/customize-thumb.webp" alt="Survivor customization with the Medic outfit selected, outfit previews, and a scrap purchase button" loading="lazy" width="440" height="879"/></button><figcaption><strong>Make it yours</strong>Preview outfits and compare their scrap costs before choosing.</figcaption></figure>
+    <figure class="wr-shot"><button type="button" data-shot="assets/guide.webp" data-caption="Zombie guide · Enemy descriptions introduce different threats." aria-label="Enlarge zombie guide screen"><img src="assets/guide-thumb.webp" alt="Zombie guide with illustrated enemy cards, threat levels, speed, and descriptions" loading="lazy" width="440" height="879"/></button><figcaption><strong>Know the threat</strong>The guide introduces enemy types, speed, and behavior.</figcaption></figure>
+    <figure class="wr-shot"><button type="button" data-shot="assets/menu.webp" data-caption="Main menu · A clear Run button anchors the screen, with other activities below." aria-label="Enlarge main menu screen"><img src="assets/menu-thumb.webp" alt="Main menu with survival instructions, a Run button, and links to customization and the safehouse" loading="lazy" width="440" height="879"/></button><figcaption><strong>A clear starting point</strong>The Run button leads; customization and other activities sit below.</figcaption></figure>
+  </div>
+  <div class="wr-decisions"><div><p class="wr-label">Keeping the build focused</p><h4>Get the core loop working first.</h4><p>I removed a daily word-collection challenge to keep development focused on running, obstacle avoidance, and the boss chase. Those interactions establish the experience each additional feature needs to support.</p></div><div><p class="wr-label">From idea to playable build</p><h4>Make each change manageable.</h4><p>I use Jira to organize features, fixes, and milestones, with Git/GitHub tracking code changes. Development moves between gameplay tuning, interface refinements, and the systems that give players a reason to start another run.</p></div></div>
+</section>
+<dialog class="wr-dialog" id="wr-lightbox" aria-label="Enlarged We Remain screen"><button type="button" id="wr-close">Close ×</button><img id="wr-large" alt=""/><p id="wr-large-caption"></p></dialog>
 
 <div class="sec" id="polish">
   <p class="se">Case Study 01 · Polish</p>
@@ -415,5 +496,12 @@
   <span>Eva Valdez · St. Petersburg, FL · 2026</span>
   <span>UX · Product · Front-End</span>
 </footer>
+<script>
+const lightbox=document.getElementById('wr-lightbox');
+document.querySelectorAll('[data-shot]').forEach(button=>button.addEventListener('click',()=>{const image=document.getElementById('wr-large');image.src=button.dataset.shot;image.alt=button.querySelector('img').alt;document.getElementById('wr-large-caption').textContent=button.dataset.caption;lightbox.showModal();}));
+document.getElementById('wr-close').addEventListener('click',()=>lightbox.close());
+lightbox.addEventListener('click',event=>{if(event.target===lightbox){const r=lightbox.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)lightbox.close();}});
+document.querySelectorAll('.wr-videos video').forEach(video=>video.addEventListener('play',()=>{document.querySelectorAll('.wr-videos video').forEach(other=>{if(other!==video)other.pause();});}));
+</script>
 </body>
 </html>
